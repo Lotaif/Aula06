@@ -1,0 +1,158 @@
+<html>
+
+<head>
+    <title>Eventos</title>
+    <style>
+        .panel-wrap {
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            width: 1000px;
+            transform: translateX(100%);
+            transition: .2s ease-out;
+        }
+        
+        .panel {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: green;
+            color: #eee;
+            overflow: auto;
+            padding: 1em;
+        }
+        
+        [type="checkbox"]:checked~.panel-wrap {
+            transform: translateX(0%);
+        }
+        
+        *,
+        *:before,
+        *:after {
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: sans-serif;
+            font-size: 18px;
+        }
+        
+        h3 {
+            margin: 0;
+        }
+        
+        p {
+            line-height: 1.4;
+            margin: 2em 0 0 0;
+        }
+        
+        [type="checkbox"] {
+            font-size: 1em;
+        }
+        
+        a:link {
+            color: green;
+        }
+        
+        a:visited {
+            color: rgb(107, 150, 107);
+        }
+        
+        a:hover {
+            color: rgb(10, 196, 10);
+        }
+        
+        a:active {
+            color: green;
+        }
+
+        .flex-container {
+            display: flex;
+            flex-direction:row;
+            background-color: green;
+            justify-content: center;
+        }
+        .flex-container > div {
+            background-color: #c4bdbd;
+            margin: 20px;
+            padding: 100px;
+            font-size: 30px;
+        }
+
+    </style>
+    <div>
+        <object type="text/html" data="menu.html" height="320px" width="100%"></object>
+    </div>
+    <h1>Eventos:</h1>
+</head>
+
+<body>
+    <input id="clicker" type="checkbox" style="opacity: 0" />
+    <a href=""><label for="clicker"><h1>Se Inscreva Clicando aqui!</h1></label></a></br>
+    </br>
+    </br>
+    <div class="flex-container">
+        <div>
+            <img src="palestra.jpg" style="width:300px; height:230px">
+            <br><br>
+            Palestras
+        </div>
+        <div>
+            <img src="cerimonia.jpg" style="width:300px">
+            <br><br>
+            Cerimônias
+        </div>
+        <div> 
+            <img src="feira.jpg" style="width:300px">
+            <br><br>
+            Feiras
+        </div>
+    </div>
+
+    <div class="panel-wrap">
+        <div class="panel">
+            <div style="text-align: center; margin-top: 100px;" width=100%>
+                <h1>Formulário</h1>
+                <form>
+                    <fieldset style="margin-left:30%; margin-right:30%">
+                        <legend> Evento:</legend>
+                        <input list="evento" name="evento" required>
+                        <datalist id="evento">
+                            <option value="Cerimônia">
+                            <option value="Palestra">
+                            <option value="Feira">
+                        </datalist></li><br><br>
+                    </fieldset>
+                </form>
+                <form>
+                    <fieldset style="margin-left:30%; margin-right:30%">
+                        <legend> Informações de Acesso</legend>
+                        Usuário:<input type="text" name="usuario"><br><br> Senha:
+                        <input type="text" name="senha"><br><br> Confirme a Senha:<input type="text" name="confirmsenha"><br><br>
+                    </fieldset>
+                </form>
+                <form>
+                    <fieldset style="margin-left:30%; margin-right:30%">
+                        <legend> Informações Pessoais</legend>
+                        Nome Completo:<input type="text" name="nomecompleto"><br><br> E-mail:
+                        <input type="email" name="email2"><br><br> Celular:
+                        <input type="text" name="celular"><br><br>
+                        <fieldset style="margin-left:10%; margin-right:10%">
+                            <legend> Sexo </legend>
+                            <input type="checkbox" name="masculino" value="masculino"> Masculino <input type="checkbox" name="feminino" value="feminino"> Feminino
+                        </fieldset><br><br> Data de Nascimento: <input type="date" name="dataNascimento" id="dataNascimento"><br><br> Cor Favorita: <input type="color" name="corFavorita" id="corFavorita" value="#ff2222"><br><br>
+                </form>
+                </fieldset>
+
+                <a href=""><button type="submit"> Inscrever-se </button></a> <a href=""><button> Cancelar </button><br><br></a>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,131 @@
+<html>
+
+<head>
+
+    <title>Menu</title>
+
+    <style>
+        .dropbtn {
+            background-color: green;
+            color: White;
+            padding: 32px;
+            font-size: 20px;
+            border: none;
+        }
+        
+        .dropdown {
+            position: relative;
+            display: right;
+        }
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 140px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+        
+        .dropdown-content a {
+            color: green;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        
+        .dropdown-content a:hover {
+            background-color: rgb(47, 228, 47);
+        }
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        
+        .dropdown:hover .dropbtn {
+            background-color: #009933;
+        }
+        
+        .topnav {
+            overflow: hidden;
+            background-color: #e9e9e9;
+        }
+        
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        
+        .topnav a.active {
+            background-color: #2196F3;
+            color: white;
+        }
+        
+        .topnav input[type=text] {
+            float: right;
+            padding: 6px;
+            border: none;
+            margin-top: 8px;
+            margin-right: 16px;
+            font-size: 17px;
+        }
+        
+        @media screen and (max-width: 480px) {
+            .topnav a,
+            .topnav input[type=text] {
+                float: none;
+                display: block;
+                text-align: left;
+                width: 100%;
+                margin: 0;
+                padding: 14px;
+            }
+            .topnav input[type=text] {
+                border: 1px solid #ccc;
+            }
+        }
+    </style>
+</head>
+
+
+<body style="background-color: #e9e9e9;">
+    <a href="https://www.facebook.com/ifsppirituba" target="_blank"><img src="facebook.png" style="position: absolute; left:1400px; top:10px; width: 40px" alt="facebook"></a>
+    <a href="https://www.instagram.com/campus_saopaulo_ifsp/" target="_blank"><img src="instagram.png" style="position: absolute; left:1300px; top:10px; width: 40px" alt="instagram"></a>
+    <a href="https://twitter.com/campus_saopaulo" target="_blank"><img src="twitter.png" style="position: absolute; left:1200px; top:10px; width:40px" alt="twitter"></a>
+    <a href=""><img src="lupa.png" style="position: absolute; left:1715px; top:20px; width: 25px" alt="search"></a>
+
+    <div class="dropdown" style="float:right; margin-right:20px;">
+        <button class="dropbtn">Menu</button>
+        <div class="dropdown-content">
+            <a target="_top" href="index.html">Home</a>
+            <a target="_top" href="entrar.html">Entrar</a>
+            <a target="_top" href="contato.html">Contato</a>
+            <a target="_top" href="eventos.html">Eventos</a>
+            <a target="_top" href="sobre.html">Sobre</a>
+        </div>
+    </div>
+    <div>
+        <div class="topnav">
+            <input type="text" placeholder="Search..">
+        </div>
+    </div>
+
+    <img src="logo-ifsp.png" style="float:left" alt="IFSP" width="120" height="150">
+    <br><br><br>
+    <h1 style="text-align-last: left; color:#422500; color: green; font-size: 46;"><pre>   Instituto Federal de São Paulo</pre></h1>
+    <div style="margin-left: 30px">
+        <img src="220.gif" style="float:left" alt="arrows">
+        <img src="220.gif" style="float:left" alt="arrows">
+        <img src="220.gif" style="float:left" alt="arrows">
+        <img src="220.gif" style="float:left" alt="arrows">
+        <img src="220.gif" style="float:left" alt="arrows">
+        <img src="220.gif" style="float:left" alt="arrows">
+        <img src="220.gif" style="float:left" alt="arrows">
+        <img src="220.gif" style="float:left" alt="arrows">
+        <img src="220.gif" style="float:left" alt="arrows">
+        <img src="220.gif" style="float:left" alt="arrows">
+    </div>
+
+</body>
+
+</html>
